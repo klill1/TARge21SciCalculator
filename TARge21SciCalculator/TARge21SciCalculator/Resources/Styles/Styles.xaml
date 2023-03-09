@@ -4,13 +4,11 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <!--Content Page Style-->
     <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
         <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
         <Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
     </Style>
 
-    <!--Grid Styles-->
     <Style TargetType="Grid">
         <Setter Property="Padding" Value="0" />
         <Setter Property="Margin" Value="0" />
@@ -21,7 +19,6 @@
         <Setter Property="BackgroundColor" Value="Transparent" />
     </Style>
     
-    <!--button styles-->
     <Style TargetType="Button" x:Key="NumberButtonStyle">
         <Setter Property="FontSize" Value="22" />
         <Setter Property="FontFamily" Value="RegularFont" />
@@ -71,7 +68,6 @@
         <Setter Property="FontAutoScalingEnabled" Value="False"/>
     </Style>
 
-    <!--Label Styles-->
     <Style TargetType="Label" x:Key="EqualsLabelStyle">
         <Setter Property="FontSize" Value="28"/>
         <Setter Property="TextColor" Value="#EFBB31"/>
