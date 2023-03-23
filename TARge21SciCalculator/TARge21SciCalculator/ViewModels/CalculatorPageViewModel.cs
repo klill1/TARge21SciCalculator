@@ -1,8 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
-using System.Linq.Expressions;
-using System.Text.RegularExpressions;
-
-namespace TARge21SciCalculator.ViewModels
+﻿namespace TARge21SciCalculator.ViewModels
 {
     [INotifyPropertyChanged]
     internal partial class CalculatorPageViewModel
@@ -40,6 +36,10 @@ namespace TARge21SciCalculator.ViewModels
             try
             {
                 var inputString = NormalizeInputString();
+                var expression = new Expression(inputString);
+                var result = expression.Evaluate();
+
+                CalculatedResult = result.ToString();
             }
             catch (Exception ex)
             {
